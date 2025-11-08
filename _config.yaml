@@ -1,2 +1,38 @@
-title: My Awesome Site
-description: A place to share my projects and ideas.
+# Site settings
+title: "Malaysia Passport Guide"  # Your website's title
+description: "A comprehensive guide to Malaysia Passports, including how to apply, benefits, and travel tips."
+baseurl: ""  # Leave empty if you're using GitHub Pages in a root domain (username.github.io)
+
+# SEO settings
+seo:
+  keywords: "Malaysia passport, passport application, travel to Malaysia, Malaysian passport benefits"
+  image: "https://username.github.io/assets/images/og-image.jpg"  # Image for social media sharing (Open Graph)
+
+# Jekyll settings
+theme: jekyll-theme-minimal  # Or any theme you're using
+markdown: kramdown  # Default markdown processor, commonly used with Jekyll
+
+# Permalink settings
+permalink: "/:categories/:year/:month/:day/:title/"  # SEO-friendly permalinks for blog posts
+
+# Plugins
+plugins:
+  - jekyll-seo-tag  # Automatically adds SEO metadata to your pages
+  - jekyll-feed    # If you want an RSS feed for your blog
+
+# Social Media Tags (for Open Graph)
+open_graph: true  # Automatically generates Open Graph tags for better social media sharing
+
+# Sitemap (helps search engines crawl your site)
+sitemap: true  # Ensure you have a sitemap for search engines like Google
+
+# Include additional files or folders
+exclude:
+  - README.md  # Exclude unnecessary files from the Jekyll build
+
+# Pagination settings (if you're using pagination for blog posts)
+paginate: 5  # Number of posts per page (adjust as necessary)
+paginate_path: "/page:num/"
+
+# Custom settings (optional)
+show_author_bio: true  # Show author bio on posts if applicable
